@@ -1,5 +1,7 @@
 package com.xzy.spring.cloud.weather.vo;
 
+import lombok.Data;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -13,6 +15,7 @@ import java.io.Serializable;
  * @Date 2018/10/22 21:57
  * @Version 1.0
  **/
+@Data
 @XmlRootElement(name = "d")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class City{
@@ -27,35 +30,4 @@ public class City{
     @XmlAttribute(name = "d4")
     private String province;
 
-    public String getCityId() {
-        return cityId;
-    }
-
-    public void setCityId(String cityId) {
-        this.cityId = cityId;
-    }
-
-    public String getCityName() {
-        return cityName;
-    }
-
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
-    }
-
-    public String getCityCode() {
-        return cityCode;
-    }
-
-    public void setCityCode(String cityCode) {
-        this.cityCode = cityCode;
-    }
-
-    public String getProvince() {
-        return province;
-    }
-
-    public void setProvince(String province) {
-        this.province = province;
-    }
 }

@@ -13,7 +13,7 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
 import java.util.List;
 
 /**
- * @ClassName WeatherDataSyncJob
+ * @ClassName WeatherDataSyncJob 定时执行任务
  * @Description TODO
  * @Author Administrator
  * @Date 2018/10/22 19:42
